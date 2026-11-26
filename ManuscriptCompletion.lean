@@ -1,0 +1,11 @@
+import LeanVerification.ManuscriptCompletion.Raised.WedgeNonisochronous
+import LeanVerification.ManuscriptCompletion.Exterior.BoundaryAudit
+import LeanVerification.ManuscriptCompletion.Exterior.FinalPhysicalAudit
+import LeanVerification.ManuscriptCompletion.Exterior.GeneralInverse
+import LeanVerification.ManuscriptCompletion.Exterior.SpectralAudit
+import LeanVerification.ManuscriptCompletion.Exterior.TerminalAudit
+import LeanVerification.ManuscriptCompletion.Fold.Audit
+import LeanVerification.ManuscriptCompletion.Raised.LowerWedgeNonisochronous
+
+/-! Final manuscript completion imports: actual exterior spectral construction,
+original-time identification, sharp lower wedge, and physical fold neighborhoods. -/
