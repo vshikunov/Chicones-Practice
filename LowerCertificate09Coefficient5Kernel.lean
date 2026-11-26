@@ -1,0 +1,18 @@
+import LeanVerification.PositiveDCompletion.LowerCertificate09Coefficient5KernelGuards
+import LeanVerification.PositiveDCompletion.LowerCertificate09Coefficient5KernelErase
+import LeanVerification.CertificateKernel.SourceIdentity
+
+noncomputable section
+namespace LeanVerification.PositiveDCompletion
+set_option Elab.async false
+set_option maxHeartbeats 96000000
+set_option maxRecDepth 100000
+
+theorem lowerAtom09Coeff5_identity_source_value (x t : ℝ) :
+    CertificateKernel.SourceValue.value x t lowerAtom09Coeff5_identity_kernel_plain_left =
+      CertificateKernel.SourceValue.value x t lowerAtom09Coeff5_identity_kernel_plain_right := by
+  exact CertificateKernel.sourceIdentity_of_checked
+    lowerAtom09Coeff5_identity_kernel_program lowerAtom09Coeff5_identity_kernel_plain_left lowerAtom09Coeff5_identity_kernel_plain_right 6103 0
+    lowerAtom09Coeff5_identity_kernel_checked lowerAtom09Coeff5_identity_kernel_root_eq lowerAtom09Coeff5_identity_kernel_erase_left lowerAtom09Coeff5_identity_kernel_erase_right x t
+
+end LeanVerification.PositiveDCompletion

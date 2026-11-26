@@ -1,0 +1,1718 @@
+import LeanVerification.PositiveDCompletion.LowerCertificate09Coefficient4KernelGuardData
+import LeanVerification.CertificateKernel.SparseProgramArrayCoverage
+
+noncomputable section
+namespace LeanVerification.PositiveDCompletion
+set_option Elab.async false
+set_option maxHeartbeats 96000000
+set_option maxRecDepth 100000
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_length : lowerAtom09Coeff4_identity_kernel_program.ops.length=6675 := by decide +kernel
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0212_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0212=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6656 :=
+  CertificateKernel.SparseProgramArrayCoverage.final_suffix_eq_drop
+    lowerAtom09Coeff4_identity_kernel_program.ops 6656 19 6675 lowerAtom09Coeff4_identity_kernel_ops_chunk0212 lowerAtom09Coeff4_identity_kernel_ops_suffix0212
+    lowerAtom09Coeff4_identity_kernel_ops_length (Eq.refl 6675) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0212) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0212)
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0211_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0211=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6624 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6624 32 6656
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0211 lowerAtom09Coeff4_identity_kernel_ops_suffix0212 lowerAtom09Coeff4_identity_kernel_ops_suffix0211
+    (Eq.refl 6656) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0211)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0211 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0212)) lowerAtom09Coeff4_identity_kernel_ops_suffix0212_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0210_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0210=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6592 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6592 32 6624
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0210 lowerAtom09Coeff4_identity_kernel_ops_suffix0211 lowerAtom09Coeff4_identity_kernel_ops_suffix0210
+    (Eq.refl 6624) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0210)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0210 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0211)) lowerAtom09Coeff4_identity_kernel_ops_suffix0211_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0209_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0209=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6560 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6560 32 6592
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0209 lowerAtom09Coeff4_identity_kernel_ops_suffix0210 lowerAtom09Coeff4_identity_kernel_ops_suffix0209
+    (Eq.refl 6592) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0209)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0209 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0210)) lowerAtom09Coeff4_identity_kernel_ops_suffix0210_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0208_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0208=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6528 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6528 32 6560
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0208 lowerAtom09Coeff4_identity_kernel_ops_suffix0209 lowerAtom09Coeff4_identity_kernel_ops_suffix0208
+    (Eq.refl 6560) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0208)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0208 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0209)) lowerAtom09Coeff4_identity_kernel_ops_suffix0209_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0207_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0207=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6496 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6496 32 6528
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0207 lowerAtom09Coeff4_identity_kernel_ops_suffix0208 lowerAtom09Coeff4_identity_kernel_ops_suffix0207
+    (Eq.refl 6528) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0207)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0207 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0208)) lowerAtom09Coeff4_identity_kernel_ops_suffix0208_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0206_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0206=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6464 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6464 32 6496
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0206 lowerAtom09Coeff4_identity_kernel_ops_suffix0207 lowerAtom09Coeff4_identity_kernel_ops_suffix0206
+    (Eq.refl 6496) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0206)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0206 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0207)) lowerAtom09Coeff4_identity_kernel_ops_suffix0207_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0205_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0205=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6432 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6432 32 6464
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0205 lowerAtom09Coeff4_identity_kernel_ops_suffix0206 lowerAtom09Coeff4_identity_kernel_ops_suffix0205
+    (Eq.refl 6464) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0205)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0205 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0206)) lowerAtom09Coeff4_identity_kernel_ops_suffix0206_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0204_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0204=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6400 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6400 32 6432
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0204 lowerAtom09Coeff4_identity_kernel_ops_suffix0205 lowerAtom09Coeff4_identity_kernel_ops_suffix0204
+    (Eq.refl 6432) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0204)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0204 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0205)) lowerAtom09Coeff4_identity_kernel_ops_suffix0205_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0203_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0203=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6368 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6368 32 6400
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0203 lowerAtom09Coeff4_identity_kernel_ops_suffix0204 lowerAtom09Coeff4_identity_kernel_ops_suffix0203
+    (Eq.refl 6400) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0203)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0203 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0204)) lowerAtom09Coeff4_identity_kernel_ops_suffix0204_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0202_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0202=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6336 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6336 32 6368
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0202 lowerAtom09Coeff4_identity_kernel_ops_suffix0203 lowerAtom09Coeff4_identity_kernel_ops_suffix0202
+    (Eq.refl 6368) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0202)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0202 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0203)) lowerAtom09Coeff4_identity_kernel_ops_suffix0203_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0201_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0201=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6304 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6304 32 6336
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0201 lowerAtom09Coeff4_identity_kernel_ops_suffix0202 lowerAtom09Coeff4_identity_kernel_ops_suffix0201
+    (Eq.refl 6336) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0201)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0201 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0202)) lowerAtom09Coeff4_identity_kernel_ops_suffix0202_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0200_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0200=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6272 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6272 32 6304
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0200 lowerAtom09Coeff4_identity_kernel_ops_suffix0201 lowerAtom09Coeff4_identity_kernel_ops_suffix0200
+    (Eq.refl 6304) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0200)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0200 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0201)) lowerAtom09Coeff4_identity_kernel_ops_suffix0201_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0199_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0199=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6240 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6240 32 6272
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0199 lowerAtom09Coeff4_identity_kernel_ops_suffix0200 lowerAtom09Coeff4_identity_kernel_ops_suffix0199
+    (Eq.refl 6272) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0199)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0199 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0200)) lowerAtom09Coeff4_identity_kernel_ops_suffix0200_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0198_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0198=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6208 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6208 32 6240
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0198 lowerAtom09Coeff4_identity_kernel_ops_suffix0199 lowerAtom09Coeff4_identity_kernel_ops_suffix0198
+    (Eq.refl 6240) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0198)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0198 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0199)) lowerAtom09Coeff4_identity_kernel_ops_suffix0199_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0197_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0197=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6176 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6176 32 6208
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0197 lowerAtom09Coeff4_identity_kernel_ops_suffix0198 lowerAtom09Coeff4_identity_kernel_ops_suffix0197
+    (Eq.refl 6208) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0197)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0197 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0198)) lowerAtom09Coeff4_identity_kernel_ops_suffix0198_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0196_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0196=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6144 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6144 32 6176
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0196 lowerAtom09Coeff4_identity_kernel_ops_suffix0197 lowerAtom09Coeff4_identity_kernel_ops_suffix0196
+    (Eq.refl 6176) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0196)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0196 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0197)) lowerAtom09Coeff4_identity_kernel_ops_suffix0197_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0195_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0195=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6112 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6112 32 6144
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0195 lowerAtom09Coeff4_identity_kernel_ops_suffix0196 lowerAtom09Coeff4_identity_kernel_ops_suffix0195
+    (Eq.refl 6144) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0195)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0195 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0196)) lowerAtom09Coeff4_identity_kernel_ops_suffix0196_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0194_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0194=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6080 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6080 32 6112
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0194 lowerAtom09Coeff4_identity_kernel_ops_suffix0195 lowerAtom09Coeff4_identity_kernel_ops_suffix0194
+    (Eq.refl 6112) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0194)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0194 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0195)) lowerAtom09Coeff4_identity_kernel_ops_suffix0195_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0193_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0193=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6048 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6048 32 6080
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0193 lowerAtom09Coeff4_identity_kernel_ops_suffix0194 lowerAtom09Coeff4_identity_kernel_ops_suffix0193
+    (Eq.refl 6080) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0193)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0193 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0194)) lowerAtom09Coeff4_identity_kernel_ops_suffix0194_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0192_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0192=lowerAtom09Coeff4_identity_kernel_program.ops.drop 6016 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 6016 32 6048
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0192 lowerAtom09Coeff4_identity_kernel_ops_suffix0193 lowerAtom09Coeff4_identity_kernel_ops_suffix0192
+    (Eq.refl 6048) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0192)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0192 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0193)) lowerAtom09Coeff4_identity_kernel_ops_suffix0193_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0191_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0191=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5984 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5984 32 6016
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0191 lowerAtom09Coeff4_identity_kernel_ops_suffix0192 lowerAtom09Coeff4_identity_kernel_ops_suffix0191
+    (Eq.refl 6016) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0191)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0191 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0192)) lowerAtom09Coeff4_identity_kernel_ops_suffix0192_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0190_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0190=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5952 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5952 32 5984
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0190 lowerAtom09Coeff4_identity_kernel_ops_suffix0191 lowerAtom09Coeff4_identity_kernel_ops_suffix0190
+    (Eq.refl 5984) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0190)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0190 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0191)) lowerAtom09Coeff4_identity_kernel_ops_suffix0191_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0189_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0189=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5920 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5920 32 5952
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0189 lowerAtom09Coeff4_identity_kernel_ops_suffix0190 lowerAtom09Coeff4_identity_kernel_ops_suffix0189
+    (Eq.refl 5952) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0189)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0189 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0190)) lowerAtom09Coeff4_identity_kernel_ops_suffix0190_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0188_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0188=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5888 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5888 32 5920
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0188 lowerAtom09Coeff4_identity_kernel_ops_suffix0189 lowerAtom09Coeff4_identity_kernel_ops_suffix0188
+    (Eq.refl 5920) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0188)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0188 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0189)) lowerAtom09Coeff4_identity_kernel_ops_suffix0189_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0187_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0187=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5856 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5856 32 5888
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0187 lowerAtom09Coeff4_identity_kernel_ops_suffix0188 lowerAtom09Coeff4_identity_kernel_ops_suffix0187
+    (Eq.refl 5888) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0187)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0187 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0188)) lowerAtom09Coeff4_identity_kernel_ops_suffix0188_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0186_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0186=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5824 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5824 32 5856
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0186 lowerAtom09Coeff4_identity_kernel_ops_suffix0187 lowerAtom09Coeff4_identity_kernel_ops_suffix0186
+    (Eq.refl 5856) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0186)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0186 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0187)) lowerAtom09Coeff4_identity_kernel_ops_suffix0187_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0185_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0185=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5792 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5792 32 5824
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0185 lowerAtom09Coeff4_identity_kernel_ops_suffix0186 lowerAtom09Coeff4_identity_kernel_ops_suffix0185
+    (Eq.refl 5824) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0185)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0185 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0186)) lowerAtom09Coeff4_identity_kernel_ops_suffix0186_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0184_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0184=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5760 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5760 32 5792
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0184 lowerAtom09Coeff4_identity_kernel_ops_suffix0185 lowerAtom09Coeff4_identity_kernel_ops_suffix0184
+    (Eq.refl 5792) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0184)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0184 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0185)) lowerAtom09Coeff4_identity_kernel_ops_suffix0185_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0183_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0183=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5728 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5728 32 5760
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0183 lowerAtom09Coeff4_identity_kernel_ops_suffix0184 lowerAtom09Coeff4_identity_kernel_ops_suffix0183
+    (Eq.refl 5760) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0183)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0183 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0184)) lowerAtom09Coeff4_identity_kernel_ops_suffix0184_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0182_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0182=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5696 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5696 32 5728
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0182 lowerAtom09Coeff4_identity_kernel_ops_suffix0183 lowerAtom09Coeff4_identity_kernel_ops_suffix0182
+    (Eq.refl 5728) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0182)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0182 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0183)) lowerAtom09Coeff4_identity_kernel_ops_suffix0183_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0181_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0181=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5664 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5664 32 5696
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0181 lowerAtom09Coeff4_identity_kernel_ops_suffix0182 lowerAtom09Coeff4_identity_kernel_ops_suffix0181
+    (Eq.refl 5696) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0181)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0181 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0182)) lowerAtom09Coeff4_identity_kernel_ops_suffix0182_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0180_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0180=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5632 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5632 32 5664
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0180 lowerAtom09Coeff4_identity_kernel_ops_suffix0181 lowerAtom09Coeff4_identity_kernel_ops_suffix0180
+    (Eq.refl 5664) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0180)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0180 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0181)) lowerAtom09Coeff4_identity_kernel_ops_suffix0181_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0179_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0179=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5600 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5600 32 5632
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0179 lowerAtom09Coeff4_identity_kernel_ops_suffix0180 lowerAtom09Coeff4_identity_kernel_ops_suffix0179
+    (Eq.refl 5632) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0179)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0179 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0180)) lowerAtom09Coeff4_identity_kernel_ops_suffix0180_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0178_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0178=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5568 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5568 32 5600
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0178 lowerAtom09Coeff4_identity_kernel_ops_suffix0179 lowerAtom09Coeff4_identity_kernel_ops_suffix0178
+    (Eq.refl 5600) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0178)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0178 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0179)) lowerAtom09Coeff4_identity_kernel_ops_suffix0179_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0177_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0177=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5536 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5536 32 5568
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0177 lowerAtom09Coeff4_identity_kernel_ops_suffix0178 lowerAtom09Coeff4_identity_kernel_ops_suffix0177
+    (Eq.refl 5568) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0177)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0177 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0178)) lowerAtom09Coeff4_identity_kernel_ops_suffix0178_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0176_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0176=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5504 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5504 32 5536
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0176 lowerAtom09Coeff4_identity_kernel_ops_suffix0177 lowerAtom09Coeff4_identity_kernel_ops_suffix0176
+    (Eq.refl 5536) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0176)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0176 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0177)) lowerAtom09Coeff4_identity_kernel_ops_suffix0177_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0175_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0175=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5472 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5472 32 5504
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0175 lowerAtom09Coeff4_identity_kernel_ops_suffix0176 lowerAtom09Coeff4_identity_kernel_ops_suffix0175
+    (Eq.refl 5504) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0175)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0175 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0176)) lowerAtom09Coeff4_identity_kernel_ops_suffix0176_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0174_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0174=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5440 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5440 32 5472
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0174 lowerAtom09Coeff4_identity_kernel_ops_suffix0175 lowerAtom09Coeff4_identity_kernel_ops_suffix0174
+    (Eq.refl 5472) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0174)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0174 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0175)) lowerAtom09Coeff4_identity_kernel_ops_suffix0175_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0173_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0173=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5408 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5408 32 5440
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0173 lowerAtom09Coeff4_identity_kernel_ops_suffix0174 lowerAtom09Coeff4_identity_kernel_ops_suffix0173
+    (Eq.refl 5440) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0173)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0173 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0174)) lowerAtom09Coeff4_identity_kernel_ops_suffix0174_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0172_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0172=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5376 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5376 32 5408
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0172 lowerAtom09Coeff4_identity_kernel_ops_suffix0173 lowerAtom09Coeff4_identity_kernel_ops_suffix0172
+    (Eq.refl 5408) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0172)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0172 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0173)) lowerAtom09Coeff4_identity_kernel_ops_suffix0173_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0171_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0171=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5344 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5344 32 5376
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0171 lowerAtom09Coeff4_identity_kernel_ops_suffix0172 lowerAtom09Coeff4_identity_kernel_ops_suffix0171
+    (Eq.refl 5376) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0171)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0171 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0172)) lowerAtom09Coeff4_identity_kernel_ops_suffix0172_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0170_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0170=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5312 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5312 32 5344
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0170 lowerAtom09Coeff4_identity_kernel_ops_suffix0171 lowerAtom09Coeff4_identity_kernel_ops_suffix0170
+    (Eq.refl 5344) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0170)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0170 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0171)) lowerAtom09Coeff4_identity_kernel_ops_suffix0171_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0169_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0169=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5280 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5280 32 5312
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0169 lowerAtom09Coeff4_identity_kernel_ops_suffix0170 lowerAtom09Coeff4_identity_kernel_ops_suffix0169
+    (Eq.refl 5312) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0169)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0169 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0170)) lowerAtom09Coeff4_identity_kernel_ops_suffix0170_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0168_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0168=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5248 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5248 32 5280
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0168 lowerAtom09Coeff4_identity_kernel_ops_suffix0169 lowerAtom09Coeff4_identity_kernel_ops_suffix0168
+    (Eq.refl 5280) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0168)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0168 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0169)) lowerAtom09Coeff4_identity_kernel_ops_suffix0169_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0167_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0167=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5216 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5216 32 5248
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0167 lowerAtom09Coeff4_identity_kernel_ops_suffix0168 lowerAtom09Coeff4_identity_kernel_ops_suffix0167
+    (Eq.refl 5248) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0167)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0167 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0168)) lowerAtom09Coeff4_identity_kernel_ops_suffix0168_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0166_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0166=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5184 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5184 32 5216
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0166 lowerAtom09Coeff4_identity_kernel_ops_suffix0167 lowerAtom09Coeff4_identity_kernel_ops_suffix0166
+    (Eq.refl 5216) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0166)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0166 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0167)) lowerAtom09Coeff4_identity_kernel_ops_suffix0167_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0165_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0165=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5152 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5152 32 5184
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0165 lowerAtom09Coeff4_identity_kernel_ops_suffix0166 lowerAtom09Coeff4_identity_kernel_ops_suffix0165
+    (Eq.refl 5184) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0165)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0165 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0166)) lowerAtom09Coeff4_identity_kernel_ops_suffix0166_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0164_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0164=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5120 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5120 32 5152
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0164 lowerAtom09Coeff4_identity_kernel_ops_suffix0165 lowerAtom09Coeff4_identity_kernel_ops_suffix0164
+    (Eq.refl 5152) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0164)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0164 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0165)) lowerAtom09Coeff4_identity_kernel_ops_suffix0165_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0163_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0163=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5088 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5088 32 5120
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0163 lowerAtom09Coeff4_identity_kernel_ops_suffix0164 lowerAtom09Coeff4_identity_kernel_ops_suffix0163
+    (Eq.refl 5120) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0163)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0163 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0164)) lowerAtom09Coeff4_identity_kernel_ops_suffix0164_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0162_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0162=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5056 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5056 32 5088
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0162 lowerAtom09Coeff4_identity_kernel_ops_suffix0163 lowerAtom09Coeff4_identity_kernel_ops_suffix0162
+    (Eq.refl 5088) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0162)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0162 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0163)) lowerAtom09Coeff4_identity_kernel_ops_suffix0163_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0161_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0161=lowerAtom09Coeff4_identity_kernel_program.ops.drop 5024 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 5024 32 5056
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0161 lowerAtom09Coeff4_identity_kernel_ops_suffix0162 lowerAtom09Coeff4_identity_kernel_ops_suffix0161
+    (Eq.refl 5056) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0161)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0161 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0162)) lowerAtom09Coeff4_identity_kernel_ops_suffix0162_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0160_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0160=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4992 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4992 32 5024
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0160 lowerAtom09Coeff4_identity_kernel_ops_suffix0161 lowerAtom09Coeff4_identity_kernel_ops_suffix0160
+    (Eq.refl 5024) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0160)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0160 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0161)) lowerAtom09Coeff4_identity_kernel_ops_suffix0161_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0159_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0159=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4960 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4960 32 4992
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0159 lowerAtom09Coeff4_identity_kernel_ops_suffix0160 lowerAtom09Coeff4_identity_kernel_ops_suffix0159
+    (Eq.refl 4992) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0159)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0159 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0160)) lowerAtom09Coeff4_identity_kernel_ops_suffix0160_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0158_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0158=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4928 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4928 32 4960
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0158 lowerAtom09Coeff4_identity_kernel_ops_suffix0159 lowerAtom09Coeff4_identity_kernel_ops_suffix0158
+    (Eq.refl 4960) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0158)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0158 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0159)) lowerAtom09Coeff4_identity_kernel_ops_suffix0159_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0157_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0157=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4896 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4896 32 4928
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0157 lowerAtom09Coeff4_identity_kernel_ops_suffix0158 lowerAtom09Coeff4_identity_kernel_ops_suffix0157
+    (Eq.refl 4928) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0157)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0157 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0158)) lowerAtom09Coeff4_identity_kernel_ops_suffix0158_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0156_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0156=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4864 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4864 32 4896
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0156 lowerAtom09Coeff4_identity_kernel_ops_suffix0157 lowerAtom09Coeff4_identity_kernel_ops_suffix0156
+    (Eq.refl 4896) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0156)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0156 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0157)) lowerAtom09Coeff4_identity_kernel_ops_suffix0157_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0155_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0155=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4832 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4832 32 4864
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0155 lowerAtom09Coeff4_identity_kernel_ops_suffix0156 lowerAtom09Coeff4_identity_kernel_ops_suffix0155
+    (Eq.refl 4864) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0155)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0155 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0156)) lowerAtom09Coeff4_identity_kernel_ops_suffix0156_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0154_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0154=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4800 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4800 32 4832
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0154 lowerAtom09Coeff4_identity_kernel_ops_suffix0155 lowerAtom09Coeff4_identity_kernel_ops_suffix0154
+    (Eq.refl 4832) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0154)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0154 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0155)) lowerAtom09Coeff4_identity_kernel_ops_suffix0155_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0153_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0153=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4768 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4768 32 4800
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0153 lowerAtom09Coeff4_identity_kernel_ops_suffix0154 lowerAtom09Coeff4_identity_kernel_ops_suffix0153
+    (Eq.refl 4800) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0153)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0153 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0154)) lowerAtom09Coeff4_identity_kernel_ops_suffix0154_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0152_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0152=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4736 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4736 32 4768
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0152 lowerAtom09Coeff4_identity_kernel_ops_suffix0153 lowerAtom09Coeff4_identity_kernel_ops_suffix0152
+    (Eq.refl 4768) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0152)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0152 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0153)) lowerAtom09Coeff4_identity_kernel_ops_suffix0153_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0151_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0151=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4704 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4704 32 4736
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0151 lowerAtom09Coeff4_identity_kernel_ops_suffix0152 lowerAtom09Coeff4_identity_kernel_ops_suffix0151
+    (Eq.refl 4736) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0151)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0151 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0152)) lowerAtom09Coeff4_identity_kernel_ops_suffix0152_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0150_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0150=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4672 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4672 32 4704
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0150 lowerAtom09Coeff4_identity_kernel_ops_suffix0151 lowerAtom09Coeff4_identity_kernel_ops_suffix0150
+    (Eq.refl 4704) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0150)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0150 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0151)) lowerAtom09Coeff4_identity_kernel_ops_suffix0151_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0149_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0149=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4640 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4640 32 4672
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0149 lowerAtom09Coeff4_identity_kernel_ops_suffix0150 lowerAtom09Coeff4_identity_kernel_ops_suffix0149
+    (Eq.refl 4672) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0149)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0149 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0150)) lowerAtom09Coeff4_identity_kernel_ops_suffix0150_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0148_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0148=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4608 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4608 32 4640
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0148 lowerAtom09Coeff4_identity_kernel_ops_suffix0149 lowerAtom09Coeff4_identity_kernel_ops_suffix0148
+    (Eq.refl 4640) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0148)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0148 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0149)) lowerAtom09Coeff4_identity_kernel_ops_suffix0149_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0147_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0147=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4576 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4576 32 4608
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0147 lowerAtom09Coeff4_identity_kernel_ops_suffix0148 lowerAtom09Coeff4_identity_kernel_ops_suffix0147
+    (Eq.refl 4608) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0147)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0147 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0148)) lowerAtom09Coeff4_identity_kernel_ops_suffix0148_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0146_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0146=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4544 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4544 32 4576
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0146 lowerAtom09Coeff4_identity_kernel_ops_suffix0147 lowerAtom09Coeff4_identity_kernel_ops_suffix0146
+    (Eq.refl 4576) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0146)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0146 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0147)) lowerAtom09Coeff4_identity_kernel_ops_suffix0147_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0145_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0145=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4512 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4512 32 4544
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0145 lowerAtom09Coeff4_identity_kernel_ops_suffix0146 lowerAtom09Coeff4_identity_kernel_ops_suffix0145
+    (Eq.refl 4544) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0145)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0145 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0146)) lowerAtom09Coeff4_identity_kernel_ops_suffix0146_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0144_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0144=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4480 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4480 32 4512
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0144 lowerAtom09Coeff4_identity_kernel_ops_suffix0145 lowerAtom09Coeff4_identity_kernel_ops_suffix0144
+    (Eq.refl 4512) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0144)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0144 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0145)) lowerAtom09Coeff4_identity_kernel_ops_suffix0145_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0143_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0143=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4448 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4448 32 4480
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0143 lowerAtom09Coeff4_identity_kernel_ops_suffix0144 lowerAtom09Coeff4_identity_kernel_ops_suffix0143
+    (Eq.refl 4480) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0143)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0143 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0144)) lowerAtom09Coeff4_identity_kernel_ops_suffix0144_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0142_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0142=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4416 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4416 32 4448
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0142 lowerAtom09Coeff4_identity_kernel_ops_suffix0143 lowerAtom09Coeff4_identity_kernel_ops_suffix0142
+    (Eq.refl 4448) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0142)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0142 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0143)) lowerAtom09Coeff4_identity_kernel_ops_suffix0143_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0141_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0141=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4384 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4384 32 4416
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0141 lowerAtom09Coeff4_identity_kernel_ops_suffix0142 lowerAtom09Coeff4_identity_kernel_ops_suffix0141
+    (Eq.refl 4416) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0141)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0141 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0142)) lowerAtom09Coeff4_identity_kernel_ops_suffix0142_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0140_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0140=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4352 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4352 32 4384
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0140 lowerAtom09Coeff4_identity_kernel_ops_suffix0141 lowerAtom09Coeff4_identity_kernel_ops_suffix0140
+    (Eq.refl 4384) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0140)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0140 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0141)) lowerAtom09Coeff4_identity_kernel_ops_suffix0141_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0139_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0139=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4320 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4320 32 4352
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0139 lowerAtom09Coeff4_identity_kernel_ops_suffix0140 lowerAtom09Coeff4_identity_kernel_ops_suffix0139
+    (Eq.refl 4352) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0139)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0139 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0140)) lowerAtom09Coeff4_identity_kernel_ops_suffix0140_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0138_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0138=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4288 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4288 32 4320
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0138 lowerAtom09Coeff4_identity_kernel_ops_suffix0139 lowerAtom09Coeff4_identity_kernel_ops_suffix0138
+    (Eq.refl 4320) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0138)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0138 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0139)) lowerAtom09Coeff4_identity_kernel_ops_suffix0139_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0137_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0137=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4256 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4256 32 4288
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0137 lowerAtom09Coeff4_identity_kernel_ops_suffix0138 lowerAtom09Coeff4_identity_kernel_ops_suffix0137
+    (Eq.refl 4288) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0137)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0137 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0138)) lowerAtom09Coeff4_identity_kernel_ops_suffix0138_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0136_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0136=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4224 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4224 32 4256
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0136 lowerAtom09Coeff4_identity_kernel_ops_suffix0137 lowerAtom09Coeff4_identity_kernel_ops_suffix0136
+    (Eq.refl 4256) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0136)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0136 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0137)) lowerAtom09Coeff4_identity_kernel_ops_suffix0137_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0135_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0135=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4192 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4192 32 4224
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0135 lowerAtom09Coeff4_identity_kernel_ops_suffix0136 lowerAtom09Coeff4_identity_kernel_ops_suffix0135
+    (Eq.refl 4224) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0135)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0135 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0136)) lowerAtom09Coeff4_identity_kernel_ops_suffix0136_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0134_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0134=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4160 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4160 32 4192
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0134 lowerAtom09Coeff4_identity_kernel_ops_suffix0135 lowerAtom09Coeff4_identity_kernel_ops_suffix0134
+    (Eq.refl 4192) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0134)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0134 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0135)) lowerAtom09Coeff4_identity_kernel_ops_suffix0135_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0133_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0133=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4128 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4128 32 4160
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0133 lowerAtom09Coeff4_identity_kernel_ops_suffix0134 lowerAtom09Coeff4_identity_kernel_ops_suffix0133
+    (Eq.refl 4160) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0133)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0133 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0134)) lowerAtom09Coeff4_identity_kernel_ops_suffix0134_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0132_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0132=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4096 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4096 32 4128
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0132 lowerAtom09Coeff4_identity_kernel_ops_suffix0133 lowerAtom09Coeff4_identity_kernel_ops_suffix0132
+    (Eq.refl 4128) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0132)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0132 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0133)) lowerAtom09Coeff4_identity_kernel_ops_suffix0133_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0131_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0131=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4064 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4064 32 4096
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0131 lowerAtom09Coeff4_identity_kernel_ops_suffix0132 lowerAtom09Coeff4_identity_kernel_ops_suffix0131
+    (Eq.refl 4096) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0131)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0131 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0132)) lowerAtom09Coeff4_identity_kernel_ops_suffix0132_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0130_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0130=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4032 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4032 32 4064
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0130 lowerAtom09Coeff4_identity_kernel_ops_suffix0131 lowerAtom09Coeff4_identity_kernel_ops_suffix0130
+    (Eq.refl 4064) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0130)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0130 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0131)) lowerAtom09Coeff4_identity_kernel_ops_suffix0131_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0129_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0129=lowerAtom09Coeff4_identity_kernel_program.ops.drop 4000 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 4000 32 4032
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0129 lowerAtom09Coeff4_identity_kernel_ops_suffix0130 lowerAtom09Coeff4_identity_kernel_ops_suffix0129
+    (Eq.refl 4032) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0129)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0129 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0130)) lowerAtom09Coeff4_identity_kernel_ops_suffix0130_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0128_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0128=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3968 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3968 32 4000
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0128 lowerAtom09Coeff4_identity_kernel_ops_suffix0129 lowerAtom09Coeff4_identity_kernel_ops_suffix0128
+    (Eq.refl 4000) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0128)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0128 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0129)) lowerAtom09Coeff4_identity_kernel_ops_suffix0129_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0127_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0127=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3936 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3936 32 3968
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0127 lowerAtom09Coeff4_identity_kernel_ops_suffix0128 lowerAtom09Coeff4_identity_kernel_ops_suffix0127
+    (Eq.refl 3968) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0127)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0127 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0128)) lowerAtom09Coeff4_identity_kernel_ops_suffix0128_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0126_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0126=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3904 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3904 32 3936
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0126 lowerAtom09Coeff4_identity_kernel_ops_suffix0127 lowerAtom09Coeff4_identity_kernel_ops_suffix0126
+    (Eq.refl 3936) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0126)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0126 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0127)) lowerAtom09Coeff4_identity_kernel_ops_suffix0127_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0125_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0125=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3872 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3872 32 3904
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0125 lowerAtom09Coeff4_identity_kernel_ops_suffix0126 lowerAtom09Coeff4_identity_kernel_ops_suffix0125
+    (Eq.refl 3904) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0125)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0125 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0126)) lowerAtom09Coeff4_identity_kernel_ops_suffix0126_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0124_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0124=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3840 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3840 32 3872
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0124 lowerAtom09Coeff4_identity_kernel_ops_suffix0125 lowerAtom09Coeff4_identity_kernel_ops_suffix0124
+    (Eq.refl 3872) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0124)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0124 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0125)) lowerAtom09Coeff4_identity_kernel_ops_suffix0125_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0123_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0123=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3808 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3808 32 3840
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0123 lowerAtom09Coeff4_identity_kernel_ops_suffix0124 lowerAtom09Coeff4_identity_kernel_ops_suffix0123
+    (Eq.refl 3840) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0123)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0123 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0124)) lowerAtom09Coeff4_identity_kernel_ops_suffix0124_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0122_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0122=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3776 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3776 32 3808
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0122 lowerAtom09Coeff4_identity_kernel_ops_suffix0123 lowerAtom09Coeff4_identity_kernel_ops_suffix0122
+    (Eq.refl 3808) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0122)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0122 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0123)) lowerAtom09Coeff4_identity_kernel_ops_suffix0123_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0121_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0121=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3744 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3744 32 3776
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0121 lowerAtom09Coeff4_identity_kernel_ops_suffix0122 lowerAtom09Coeff4_identity_kernel_ops_suffix0121
+    (Eq.refl 3776) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0121)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0121 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0122)) lowerAtom09Coeff4_identity_kernel_ops_suffix0122_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0120_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0120=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3712 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3712 32 3744
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0120 lowerAtom09Coeff4_identity_kernel_ops_suffix0121 lowerAtom09Coeff4_identity_kernel_ops_suffix0120
+    (Eq.refl 3744) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0120)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0120 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0121)) lowerAtom09Coeff4_identity_kernel_ops_suffix0121_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0119_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0119=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3680 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3680 32 3712
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0119 lowerAtom09Coeff4_identity_kernel_ops_suffix0120 lowerAtom09Coeff4_identity_kernel_ops_suffix0119
+    (Eq.refl 3712) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0119)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0119 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0120)) lowerAtom09Coeff4_identity_kernel_ops_suffix0120_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0118_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0118=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3648 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3648 32 3680
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0118 lowerAtom09Coeff4_identity_kernel_ops_suffix0119 lowerAtom09Coeff4_identity_kernel_ops_suffix0118
+    (Eq.refl 3680) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0118)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0118 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0119)) lowerAtom09Coeff4_identity_kernel_ops_suffix0119_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0117_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0117=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3616 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3616 32 3648
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0117 lowerAtom09Coeff4_identity_kernel_ops_suffix0118 lowerAtom09Coeff4_identity_kernel_ops_suffix0117
+    (Eq.refl 3648) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0117)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0117 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0118)) lowerAtom09Coeff4_identity_kernel_ops_suffix0118_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0116_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0116=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3584 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3584 32 3616
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0116 lowerAtom09Coeff4_identity_kernel_ops_suffix0117 lowerAtom09Coeff4_identity_kernel_ops_suffix0116
+    (Eq.refl 3616) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0116)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0116 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0117)) lowerAtom09Coeff4_identity_kernel_ops_suffix0117_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0115_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0115=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3552 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3552 32 3584
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0115 lowerAtom09Coeff4_identity_kernel_ops_suffix0116 lowerAtom09Coeff4_identity_kernel_ops_suffix0115
+    (Eq.refl 3584) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0115)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0115 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0116)) lowerAtom09Coeff4_identity_kernel_ops_suffix0116_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0114_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0114=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3520 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3520 32 3552
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0114 lowerAtom09Coeff4_identity_kernel_ops_suffix0115 lowerAtom09Coeff4_identity_kernel_ops_suffix0114
+    (Eq.refl 3552) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0114)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0114 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0115)) lowerAtom09Coeff4_identity_kernel_ops_suffix0115_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0113_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0113=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3488 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3488 32 3520
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0113 lowerAtom09Coeff4_identity_kernel_ops_suffix0114 lowerAtom09Coeff4_identity_kernel_ops_suffix0113
+    (Eq.refl 3520) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0113)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0113 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0114)) lowerAtom09Coeff4_identity_kernel_ops_suffix0114_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0112_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0112=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3456 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3456 32 3488
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0112 lowerAtom09Coeff4_identity_kernel_ops_suffix0113 lowerAtom09Coeff4_identity_kernel_ops_suffix0112
+    (Eq.refl 3488) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0112)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0112 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0113)) lowerAtom09Coeff4_identity_kernel_ops_suffix0113_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0111_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0111=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3424 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3424 32 3456
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0111 lowerAtom09Coeff4_identity_kernel_ops_suffix0112 lowerAtom09Coeff4_identity_kernel_ops_suffix0111
+    (Eq.refl 3456) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0111)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0111 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0112)) lowerAtom09Coeff4_identity_kernel_ops_suffix0112_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0110_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0110=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3392 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3392 32 3424
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0110 lowerAtom09Coeff4_identity_kernel_ops_suffix0111 lowerAtom09Coeff4_identity_kernel_ops_suffix0110
+    (Eq.refl 3424) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0110)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0110 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0111)) lowerAtom09Coeff4_identity_kernel_ops_suffix0111_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0109_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0109=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3360 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3360 32 3392
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0109 lowerAtom09Coeff4_identity_kernel_ops_suffix0110 lowerAtom09Coeff4_identity_kernel_ops_suffix0109
+    (Eq.refl 3392) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0109)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0109 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0110)) lowerAtom09Coeff4_identity_kernel_ops_suffix0110_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0108_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0108=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3328 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3328 32 3360
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0108 lowerAtom09Coeff4_identity_kernel_ops_suffix0109 lowerAtom09Coeff4_identity_kernel_ops_suffix0108
+    (Eq.refl 3360) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0108)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0108 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0109)) lowerAtom09Coeff4_identity_kernel_ops_suffix0109_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0107_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0107=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3296 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3296 32 3328
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0107 lowerAtom09Coeff4_identity_kernel_ops_suffix0108 lowerAtom09Coeff4_identity_kernel_ops_suffix0107
+    (Eq.refl 3328) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0107)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0107 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0108)) lowerAtom09Coeff4_identity_kernel_ops_suffix0108_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0106_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0106=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3264 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3264 32 3296
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0106 lowerAtom09Coeff4_identity_kernel_ops_suffix0107 lowerAtom09Coeff4_identity_kernel_ops_suffix0106
+    (Eq.refl 3296) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0106)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0106 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0107)) lowerAtom09Coeff4_identity_kernel_ops_suffix0107_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0105_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0105=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3232 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3232 32 3264
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0105 lowerAtom09Coeff4_identity_kernel_ops_suffix0106 lowerAtom09Coeff4_identity_kernel_ops_suffix0105
+    (Eq.refl 3264) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0105)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0105 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0106)) lowerAtom09Coeff4_identity_kernel_ops_suffix0106_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0104_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0104=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3200 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3200 32 3232
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0104 lowerAtom09Coeff4_identity_kernel_ops_suffix0105 lowerAtom09Coeff4_identity_kernel_ops_suffix0104
+    (Eq.refl 3232) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0104)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0104 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0105)) lowerAtom09Coeff4_identity_kernel_ops_suffix0105_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0103_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0103=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3168 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3168 32 3200
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0103 lowerAtom09Coeff4_identity_kernel_ops_suffix0104 lowerAtom09Coeff4_identity_kernel_ops_suffix0103
+    (Eq.refl 3200) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0103)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0103 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0104)) lowerAtom09Coeff4_identity_kernel_ops_suffix0104_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0102_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0102=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3136 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3136 32 3168
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0102 lowerAtom09Coeff4_identity_kernel_ops_suffix0103 lowerAtom09Coeff4_identity_kernel_ops_suffix0102
+    (Eq.refl 3168) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0102)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0102 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0103)) lowerAtom09Coeff4_identity_kernel_ops_suffix0103_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0101_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0101=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3104 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3104 32 3136
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0101 lowerAtom09Coeff4_identity_kernel_ops_suffix0102 lowerAtom09Coeff4_identity_kernel_ops_suffix0101
+    (Eq.refl 3136) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0101)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0101 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0102)) lowerAtom09Coeff4_identity_kernel_ops_suffix0102_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0100_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0100=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3072 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3072 32 3104
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0100 lowerAtom09Coeff4_identity_kernel_ops_suffix0101 lowerAtom09Coeff4_identity_kernel_ops_suffix0100
+    (Eq.refl 3104) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0100)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0100 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0101)) lowerAtom09Coeff4_identity_kernel_ops_suffix0101_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0099_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0099=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3040 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3040 32 3072
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0099 lowerAtom09Coeff4_identity_kernel_ops_suffix0100 lowerAtom09Coeff4_identity_kernel_ops_suffix0099
+    (Eq.refl 3072) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0099)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0099 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0100)) lowerAtom09Coeff4_identity_kernel_ops_suffix0100_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0098_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0098=lowerAtom09Coeff4_identity_kernel_program.ops.drop 3008 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 3008 32 3040
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0098 lowerAtom09Coeff4_identity_kernel_ops_suffix0099 lowerAtom09Coeff4_identity_kernel_ops_suffix0098
+    (Eq.refl 3040) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0098)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0098 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0099)) lowerAtom09Coeff4_identity_kernel_ops_suffix0099_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0097_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0097=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2976 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2976 32 3008
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0097 lowerAtom09Coeff4_identity_kernel_ops_suffix0098 lowerAtom09Coeff4_identity_kernel_ops_suffix0097
+    (Eq.refl 3008) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0097)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0097 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0098)) lowerAtom09Coeff4_identity_kernel_ops_suffix0098_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0096_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0096=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2944 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2944 32 2976
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0096 lowerAtom09Coeff4_identity_kernel_ops_suffix0097 lowerAtom09Coeff4_identity_kernel_ops_suffix0096
+    (Eq.refl 2976) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0096)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0096 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0097)) lowerAtom09Coeff4_identity_kernel_ops_suffix0097_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0095_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0095=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2912 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2912 32 2944
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0095 lowerAtom09Coeff4_identity_kernel_ops_suffix0096 lowerAtom09Coeff4_identity_kernel_ops_suffix0095
+    (Eq.refl 2944) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0095)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0095 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0096)) lowerAtom09Coeff4_identity_kernel_ops_suffix0096_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0094_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0094=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2880 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2880 32 2912
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0094 lowerAtom09Coeff4_identity_kernel_ops_suffix0095 lowerAtom09Coeff4_identity_kernel_ops_suffix0094
+    (Eq.refl 2912) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0094)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0094 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0095)) lowerAtom09Coeff4_identity_kernel_ops_suffix0095_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0093_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0093=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2848 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2848 32 2880
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0093 lowerAtom09Coeff4_identity_kernel_ops_suffix0094 lowerAtom09Coeff4_identity_kernel_ops_suffix0093
+    (Eq.refl 2880) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0093)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0093 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0094)) lowerAtom09Coeff4_identity_kernel_ops_suffix0094_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0092_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0092=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2816 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2816 32 2848
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0092 lowerAtom09Coeff4_identity_kernel_ops_suffix0093 lowerAtom09Coeff4_identity_kernel_ops_suffix0092
+    (Eq.refl 2848) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0092)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0092 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0093)) lowerAtom09Coeff4_identity_kernel_ops_suffix0093_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0091_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0091=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2784 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2784 32 2816
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0091 lowerAtom09Coeff4_identity_kernel_ops_suffix0092 lowerAtom09Coeff4_identity_kernel_ops_suffix0091
+    (Eq.refl 2816) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0091)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0091 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0092)) lowerAtom09Coeff4_identity_kernel_ops_suffix0092_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0090_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0090=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2752 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2752 32 2784
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0090 lowerAtom09Coeff4_identity_kernel_ops_suffix0091 lowerAtom09Coeff4_identity_kernel_ops_suffix0090
+    (Eq.refl 2784) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0090)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0090 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0091)) lowerAtom09Coeff4_identity_kernel_ops_suffix0091_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0089_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0089=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2720 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2720 32 2752
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0089 lowerAtom09Coeff4_identity_kernel_ops_suffix0090 lowerAtom09Coeff4_identity_kernel_ops_suffix0089
+    (Eq.refl 2752) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0089)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0089 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0090)) lowerAtom09Coeff4_identity_kernel_ops_suffix0090_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0088_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0088=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2688 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2688 32 2720
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0088 lowerAtom09Coeff4_identity_kernel_ops_suffix0089 lowerAtom09Coeff4_identity_kernel_ops_suffix0088
+    (Eq.refl 2720) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0088)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0088 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0089)) lowerAtom09Coeff4_identity_kernel_ops_suffix0089_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0087_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0087=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2656 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2656 32 2688
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0087 lowerAtom09Coeff4_identity_kernel_ops_suffix0088 lowerAtom09Coeff4_identity_kernel_ops_suffix0087
+    (Eq.refl 2688) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0087)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0087 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0088)) lowerAtom09Coeff4_identity_kernel_ops_suffix0088_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0086_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0086=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2624 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2624 32 2656
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0086 lowerAtom09Coeff4_identity_kernel_ops_suffix0087 lowerAtom09Coeff4_identity_kernel_ops_suffix0086
+    (Eq.refl 2656) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0086)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0086 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0087)) lowerAtom09Coeff4_identity_kernel_ops_suffix0087_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0085_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0085=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2592 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2592 32 2624
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0085 lowerAtom09Coeff4_identity_kernel_ops_suffix0086 lowerAtom09Coeff4_identity_kernel_ops_suffix0085
+    (Eq.refl 2624) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0085)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0085 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0086)) lowerAtom09Coeff4_identity_kernel_ops_suffix0086_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0084_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0084=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2560 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2560 32 2592
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0084 lowerAtom09Coeff4_identity_kernel_ops_suffix0085 lowerAtom09Coeff4_identity_kernel_ops_suffix0084
+    (Eq.refl 2592) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0084)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0084 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0085)) lowerAtom09Coeff4_identity_kernel_ops_suffix0085_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0083_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0083=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2528 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2528 32 2560
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0083 lowerAtom09Coeff4_identity_kernel_ops_suffix0084 lowerAtom09Coeff4_identity_kernel_ops_suffix0083
+    (Eq.refl 2560) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0083)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0083 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0084)) lowerAtom09Coeff4_identity_kernel_ops_suffix0084_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0082_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0082=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2496 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2496 32 2528
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0082 lowerAtom09Coeff4_identity_kernel_ops_suffix0083 lowerAtom09Coeff4_identity_kernel_ops_suffix0082
+    (Eq.refl 2528) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0082)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0082 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0083)) lowerAtom09Coeff4_identity_kernel_ops_suffix0083_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0081_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0081=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2464 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2464 32 2496
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0081 lowerAtom09Coeff4_identity_kernel_ops_suffix0082 lowerAtom09Coeff4_identity_kernel_ops_suffix0081
+    (Eq.refl 2496) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0081)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0081 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0082)) lowerAtom09Coeff4_identity_kernel_ops_suffix0082_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0080_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0080=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2432 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2432 32 2464
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0080 lowerAtom09Coeff4_identity_kernel_ops_suffix0081 lowerAtom09Coeff4_identity_kernel_ops_suffix0080
+    (Eq.refl 2464) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0080)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0080 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0081)) lowerAtom09Coeff4_identity_kernel_ops_suffix0081_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0079_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0079=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2400 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2400 32 2432
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0079 lowerAtom09Coeff4_identity_kernel_ops_suffix0080 lowerAtom09Coeff4_identity_kernel_ops_suffix0079
+    (Eq.refl 2432) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0079)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0079 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0080)) lowerAtom09Coeff4_identity_kernel_ops_suffix0080_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0078_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0078=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2368 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2368 32 2400
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0078 lowerAtom09Coeff4_identity_kernel_ops_suffix0079 lowerAtom09Coeff4_identity_kernel_ops_suffix0078
+    (Eq.refl 2400) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0078)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0078 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0079)) lowerAtom09Coeff4_identity_kernel_ops_suffix0079_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0077_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0077=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2336 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2336 32 2368
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0077 lowerAtom09Coeff4_identity_kernel_ops_suffix0078 lowerAtom09Coeff4_identity_kernel_ops_suffix0077
+    (Eq.refl 2368) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0077)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0077 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0078)) lowerAtom09Coeff4_identity_kernel_ops_suffix0078_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0076_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0076=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2304 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2304 32 2336
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0076 lowerAtom09Coeff4_identity_kernel_ops_suffix0077 lowerAtom09Coeff4_identity_kernel_ops_suffix0076
+    (Eq.refl 2336) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0076)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0076 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0077)) lowerAtom09Coeff4_identity_kernel_ops_suffix0077_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0075_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0075=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2272 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2272 32 2304
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0075 lowerAtom09Coeff4_identity_kernel_ops_suffix0076 lowerAtom09Coeff4_identity_kernel_ops_suffix0075
+    (Eq.refl 2304) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0075)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0075 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0076)) lowerAtom09Coeff4_identity_kernel_ops_suffix0076_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0074_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0074=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2240 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2240 32 2272
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0074 lowerAtom09Coeff4_identity_kernel_ops_suffix0075 lowerAtom09Coeff4_identity_kernel_ops_suffix0074
+    (Eq.refl 2272) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0074)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0074 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0075)) lowerAtom09Coeff4_identity_kernel_ops_suffix0075_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0073_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0073=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2208 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2208 32 2240
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0073 lowerAtom09Coeff4_identity_kernel_ops_suffix0074 lowerAtom09Coeff4_identity_kernel_ops_suffix0073
+    (Eq.refl 2240) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0073)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0073 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0074)) lowerAtom09Coeff4_identity_kernel_ops_suffix0074_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0072_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0072=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2176 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2176 32 2208
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0072 lowerAtom09Coeff4_identity_kernel_ops_suffix0073 lowerAtom09Coeff4_identity_kernel_ops_suffix0072
+    (Eq.refl 2208) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0072)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0072 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0073)) lowerAtom09Coeff4_identity_kernel_ops_suffix0073_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0071_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0071=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2144 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2144 32 2176
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0071 lowerAtom09Coeff4_identity_kernel_ops_suffix0072 lowerAtom09Coeff4_identity_kernel_ops_suffix0071
+    (Eq.refl 2176) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0071)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0071 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0072)) lowerAtom09Coeff4_identity_kernel_ops_suffix0072_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0070_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0070=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2112 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2112 32 2144
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0070 lowerAtom09Coeff4_identity_kernel_ops_suffix0071 lowerAtom09Coeff4_identity_kernel_ops_suffix0070
+    (Eq.refl 2144) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0070)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0070 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0071)) lowerAtom09Coeff4_identity_kernel_ops_suffix0071_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0069_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0069=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2080 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2080 32 2112
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0069 lowerAtom09Coeff4_identity_kernel_ops_suffix0070 lowerAtom09Coeff4_identity_kernel_ops_suffix0069
+    (Eq.refl 2112) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0069)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0069 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0070)) lowerAtom09Coeff4_identity_kernel_ops_suffix0070_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0068_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0068=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2048 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2048 32 2080
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0068 lowerAtom09Coeff4_identity_kernel_ops_suffix0069 lowerAtom09Coeff4_identity_kernel_ops_suffix0068
+    (Eq.refl 2080) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0068)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0068 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0069)) lowerAtom09Coeff4_identity_kernel_ops_suffix0069_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0067_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0067=lowerAtom09Coeff4_identity_kernel_program.ops.drop 2016 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 2016 32 2048
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0067 lowerAtom09Coeff4_identity_kernel_ops_suffix0068 lowerAtom09Coeff4_identity_kernel_ops_suffix0067
+    (Eq.refl 2048) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0067)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0067 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0068)) lowerAtom09Coeff4_identity_kernel_ops_suffix0068_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0066_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0066=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1984 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1984 32 2016
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0066 lowerAtom09Coeff4_identity_kernel_ops_suffix0067 lowerAtom09Coeff4_identity_kernel_ops_suffix0066
+    (Eq.refl 2016) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0066)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0066 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0067)) lowerAtom09Coeff4_identity_kernel_ops_suffix0067_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0065_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0065=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1952 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1952 32 1984
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0065 lowerAtom09Coeff4_identity_kernel_ops_suffix0066 lowerAtom09Coeff4_identity_kernel_ops_suffix0065
+    (Eq.refl 1984) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0065)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0065 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0066)) lowerAtom09Coeff4_identity_kernel_ops_suffix0066_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0064_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0064=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1920 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1920 32 1952
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0064 lowerAtom09Coeff4_identity_kernel_ops_suffix0065 lowerAtom09Coeff4_identity_kernel_ops_suffix0064
+    (Eq.refl 1952) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0064)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0064 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0065)) lowerAtom09Coeff4_identity_kernel_ops_suffix0065_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0063_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0063=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1888 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1888 32 1920
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0063 lowerAtom09Coeff4_identity_kernel_ops_suffix0064 lowerAtom09Coeff4_identity_kernel_ops_suffix0063
+    (Eq.refl 1920) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0063)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0063 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0064)) lowerAtom09Coeff4_identity_kernel_ops_suffix0064_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0062_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0062=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1856 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1856 32 1888
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0062 lowerAtom09Coeff4_identity_kernel_ops_suffix0063 lowerAtom09Coeff4_identity_kernel_ops_suffix0062
+    (Eq.refl 1888) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0062)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0062 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0063)) lowerAtom09Coeff4_identity_kernel_ops_suffix0063_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0061_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0061=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1824 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1824 32 1856
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0061 lowerAtom09Coeff4_identity_kernel_ops_suffix0062 lowerAtom09Coeff4_identity_kernel_ops_suffix0061
+    (Eq.refl 1856) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0061)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0061 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0062)) lowerAtom09Coeff4_identity_kernel_ops_suffix0062_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0060_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0060=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1792 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1792 32 1824
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0060 lowerAtom09Coeff4_identity_kernel_ops_suffix0061 lowerAtom09Coeff4_identity_kernel_ops_suffix0060
+    (Eq.refl 1824) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0060)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0060 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0061)) lowerAtom09Coeff4_identity_kernel_ops_suffix0061_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0059_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0059=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1760 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1760 32 1792
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0059 lowerAtom09Coeff4_identity_kernel_ops_suffix0060 lowerAtom09Coeff4_identity_kernel_ops_suffix0059
+    (Eq.refl 1792) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0059)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0059 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0060)) lowerAtom09Coeff4_identity_kernel_ops_suffix0060_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0058_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0058=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1728 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1728 32 1760
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0058 lowerAtom09Coeff4_identity_kernel_ops_suffix0059 lowerAtom09Coeff4_identity_kernel_ops_suffix0058
+    (Eq.refl 1760) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0058)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0058 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0059)) lowerAtom09Coeff4_identity_kernel_ops_suffix0059_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0057_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0057=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1696 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1696 32 1728
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0057 lowerAtom09Coeff4_identity_kernel_ops_suffix0058 lowerAtom09Coeff4_identity_kernel_ops_suffix0057
+    (Eq.refl 1728) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0057)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0057 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0058)) lowerAtom09Coeff4_identity_kernel_ops_suffix0058_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0056_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0056=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1664 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1664 32 1696
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0056 lowerAtom09Coeff4_identity_kernel_ops_suffix0057 lowerAtom09Coeff4_identity_kernel_ops_suffix0056
+    (Eq.refl 1696) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0056)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0056 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0057)) lowerAtom09Coeff4_identity_kernel_ops_suffix0057_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0055_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0055=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1632 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1632 32 1664
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0055 lowerAtom09Coeff4_identity_kernel_ops_suffix0056 lowerAtom09Coeff4_identity_kernel_ops_suffix0055
+    (Eq.refl 1664) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0055)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0055 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0056)) lowerAtom09Coeff4_identity_kernel_ops_suffix0056_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0054_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0054=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1600 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1600 32 1632
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0054 lowerAtom09Coeff4_identity_kernel_ops_suffix0055 lowerAtom09Coeff4_identity_kernel_ops_suffix0054
+    (Eq.refl 1632) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0054)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0054 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0055)) lowerAtom09Coeff4_identity_kernel_ops_suffix0055_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0053_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0053=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1568 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1568 32 1600
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0053 lowerAtom09Coeff4_identity_kernel_ops_suffix0054 lowerAtom09Coeff4_identity_kernel_ops_suffix0053
+    (Eq.refl 1600) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0053)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0053 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0054)) lowerAtom09Coeff4_identity_kernel_ops_suffix0054_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0052_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0052=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1536 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1536 32 1568
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0052 lowerAtom09Coeff4_identity_kernel_ops_suffix0053 lowerAtom09Coeff4_identity_kernel_ops_suffix0052
+    (Eq.refl 1568) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0052)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0052 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0053)) lowerAtom09Coeff4_identity_kernel_ops_suffix0053_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0051_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0051=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1504 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1504 32 1536
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0051 lowerAtom09Coeff4_identity_kernel_ops_suffix0052 lowerAtom09Coeff4_identity_kernel_ops_suffix0051
+    (Eq.refl 1536) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0051)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0051 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0052)) lowerAtom09Coeff4_identity_kernel_ops_suffix0052_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0050_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0050=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1472 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1472 32 1504
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0050 lowerAtom09Coeff4_identity_kernel_ops_suffix0051 lowerAtom09Coeff4_identity_kernel_ops_suffix0050
+    (Eq.refl 1504) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0050)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0050 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0051)) lowerAtom09Coeff4_identity_kernel_ops_suffix0051_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0049_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0049=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1440 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1440 32 1472
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0049 lowerAtom09Coeff4_identity_kernel_ops_suffix0050 lowerAtom09Coeff4_identity_kernel_ops_suffix0049
+    (Eq.refl 1472) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0049)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0049 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0050)) lowerAtom09Coeff4_identity_kernel_ops_suffix0050_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0048_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0048=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1408 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1408 32 1440
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0048 lowerAtom09Coeff4_identity_kernel_ops_suffix0049 lowerAtom09Coeff4_identity_kernel_ops_suffix0048
+    (Eq.refl 1440) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0048)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0048 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0049)) lowerAtom09Coeff4_identity_kernel_ops_suffix0049_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0047_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0047=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1376 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1376 32 1408
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0047 lowerAtom09Coeff4_identity_kernel_ops_suffix0048 lowerAtom09Coeff4_identity_kernel_ops_suffix0047
+    (Eq.refl 1408) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0047)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0047 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0048)) lowerAtom09Coeff4_identity_kernel_ops_suffix0048_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0046_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0046=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1344 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1344 32 1376
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0046 lowerAtom09Coeff4_identity_kernel_ops_suffix0047 lowerAtom09Coeff4_identity_kernel_ops_suffix0046
+    (Eq.refl 1376) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0046)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0046 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0047)) lowerAtom09Coeff4_identity_kernel_ops_suffix0047_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0045_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0045=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1312 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1312 32 1344
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0045 lowerAtom09Coeff4_identity_kernel_ops_suffix0046 lowerAtom09Coeff4_identity_kernel_ops_suffix0045
+    (Eq.refl 1344) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0045)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0045 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0046)) lowerAtom09Coeff4_identity_kernel_ops_suffix0046_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0044_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0044=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1280 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1280 32 1312
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0044 lowerAtom09Coeff4_identity_kernel_ops_suffix0045 lowerAtom09Coeff4_identity_kernel_ops_suffix0044
+    (Eq.refl 1312) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0044)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0044 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0045)) lowerAtom09Coeff4_identity_kernel_ops_suffix0045_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0043_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0043=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1248 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1248 32 1280
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0043 lowerAtom09Coeff4_identity_kernel_ops_suffix0044 lowerAtom09Coeff4_identity_kernel_ops_suffix0043
+    (Eq.refl 1280) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0043)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0043 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0044)) lowerAtom09Coeff4_identity_kernel_ops_suffix0044_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0042_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0042=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1216 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1216 32 1248
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0042 lowerAtom09Coeff4_identity_kernel_ops_suffix0043 lowerAtom09Coeff4_identity_kernel_ops_suffix0042
+    (Eq.refl 1248) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0042)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0042 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0043)) lowerAtom09Coeff4_identity_kernel_ops_suffix0043_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0041_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0041=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1184 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1184 32 1216
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0041 lowerAtom09Coeff4_identity_kernel_ops_suffix0042 lowerAtom09Coeff4_identity_kernel_ops_suffix0041
+    (Eq.refl 1216) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0041)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0041 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0042)) lowerAtom09Coeff4_identity_kernel_ops_suffix0042_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0040_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0040=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1152 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1152 32 1184
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0040 lowerAtom09Coeff4_identity_kernel_ops_suffix0041 lowerAtom09Coeff4_identity_kernel_ops_suffix0040
+    (Eq.refl 1184) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0040)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0040 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0041)) lowerAtom09Coeff4_identity_kernel_ops_suffix0041_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0039_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0039=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1120 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1120 32 1152
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0039 lowerAtom09Coeff4_identity_kernel_ops_suffix0040 lowerAtom09Coeff4_identity_kernel_ops_suffix0039
+    (Eq.refl 1152) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0039)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0039 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0040)) lowerAtom09Coeff4_identity_kernel_ops_suffix0040_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0038_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0038=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1088 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1088 32 1120
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0038 lowerAtom09Coeff4_identity_kernel_ops_suffix0039 lowerAtom09Coeff4_identity_kernel_ops_suffix0038
+    (Eq.refl 1120) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0038)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0038 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0039)) lowerAtom09Coeff4_identity_kernel_ops_suffix0039_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0037_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0037=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1056 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1056 32 1088
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0037 lowerAtom09Coeff4_identity_kernel_ops_suffix0038 lowerAtom09Coeff4_identity_kernel_ops_suffix0037
+    (Eq.refl 1088) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0037)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0037 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0038)) lowerAtom09Coeff4_identity_kernel_ops_suffix0038_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0036_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0036=lowerAtom09Coeff4_identity_kernel_program.ops.drop 1024 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 1024 32 1056
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0036 lowerAtom09Coeff4_identity_kernel_ops_suffix0037 lowerAtom09Coeff4_identity_kernel_ops_suffix0036
+    (Eq.refl 1056) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0036)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0036 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0037)) lowerAtom09Coeff4_identity_kernel_ops_suffix0037_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0035_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0035=lowerAtom09Coeff4_identity_kernel_program.ops.drop 992 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 992 32 1024
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0035 lowerAtom09Coeff4_identity_kernel_ops_suffix0036 lowerAtom09Coeff4_identity_kernel_ops_suffix0035
+    (Eq.refl 1024) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0035)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0035 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0036)) lowerAtom09Coeff4_identity_kernel_ops_suffix0036_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0034_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0034=lowerAtom09Coeff4_identity_kernel_program.ops.drop 960 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 960 32 992
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0034 lowerAtom09Coeff4_identity_kernel_ops_suffix0035 lowerAtom09Coeff4_identity_kernel_ops_suffix0034
+    (Eq.refl 992) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0034)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0034 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0035)) lowerAtom09Coeff4_identity_kernel_ops_suffix0035_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0033_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0033=lowerAtom09Coeff4_identity_kernel_program.ops.drop 933 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 933 27 960
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0033 lowerAtom09Coeff4_identity_kernel_ops_suffix0034 lowerAtom09Coeff4_identity_kernel_ops_suffix0033
+    (Eq.refl 960) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0033)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0033 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0034)) lowerAtom09Coeff4_identity_kernel_ops_suffix0034_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0032_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0032=lowerAtom09Coeff4_identity_kernel_program.ops.drop 932 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 932 1 933
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0032 lowerAtom09Coeff4_identity_kernel_ops_suffix0033 lowerAtom09Coeff4_identity_kernel_ops_suffix0032
+    (Eq.refl 933) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0032)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0032 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0033)) lowerAtom09Coeff4_identity_kernel_ops_suffix0033_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0031_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0031=lowerAtom09Coeff4_identity_kernel_program.ops.drop 928 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 928 4 932
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0031 lowerAtom09Coeff4_identity_kernel_ops_suffix0032 lowerAtom09Coeff4_identity_kernel_ops_suffix0031
+    (Eq.refl 932) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0031)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0031 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0032)) lowerAtom09Coeff4_identity_kernel_ops_suffix0032_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0030_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0030=lowerAtom09Coeff4_identity_kernel_program.ops.drop 896 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 896 32 928
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0030 lowerAtom09Coeff4_identity_kernel_ops_suffix0031 lowerAtom09Coeff4_identity_kernel_ops_suffix0030
+    (Eq.refl 928) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0030)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0030 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0031)) lowerAtom09Coeff4_identity_kernel_ops_suffix0031_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0029_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0029=lowerAtom09Coeff4_identity_kernel_program.ops.drop 864 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 864 32 896
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0029 lowerAtom09Coeff4_identity_kernel_ops_suffix0030 lowerAtom09Coeff4_identity_kernel_ops_suffix0029
+    (Eq.refl 896) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0029)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0029 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0030)) lowerAtom09Coeff4_identity_kernel_ops_suffix0030_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0028_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0028=lowerAtom09Coeff4_identity_kernel_program.ops.drop 832 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 832 32 864
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0028 lowerAtom09Coeff4_identity_kernel_ops_suffix0029 lowerAtom09Coeff4_identity_kernel_ops_suffix0028
+    (Eq.refl 864) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0028)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0028 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0029)) lowerAtom09Coeff4_identity_kernel_ops_suffix0029_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0027_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0027=lowerAtom09Coeff4_identity_kernel_program.ops.drop 800 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 800 32 832
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0027 lowerAtom09Coeff4_identity_kernel_ops_suffix0028 lowerAtom09Coeff4_identity_kernel_ops_suffix0027
+    (Eq.refl 832) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0027)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0027 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0028)) lowerAtom09Coeff4_identity_kernel_ops_suffix0028_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0026_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0026=lowerAtom09Coeff4_identity_kernel_program.ops.drop 768 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 768 32 800
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0026 lowerAtom09Coeff4_identity_kernel_ops_suffix0027 lowerAtom09Coeff4_identity_kernel_ops_suffix0026
+    (Eq.refl 800) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0026)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0026 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0027)) lowerAtom09Coeff4_identity_kernel_ops_suffix0027_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0025_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0025=lowerAtom09Coeff4_identity_kernel_program.ops.drop 736 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 736 32 768
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0025 lowerAtom09Coeff4_identity_kernel_ops_suffix0026 lowerAtom09Coeff4_identity_kernel_ops_suffix0025
+    (Eq.refl 768) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0025)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0025 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0026)) lowerAtom09Coeff4_identity_kernel_ops_suffix0026_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0024_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0024=lowerAtom09Coeff4_identity_kernel_program.ops.drop 704 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 704 32 736
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0024 lowerAtom09Coeff4_identity_kernel_ops_suffix0025 lowerAtom09Coeff4_identity_kernel_ops_suffix0024
+    (Eq.refl 736) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0024)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0024 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0025)) lowerAtom09Coeff4_identity_kernel_ops_suffix0025_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0023_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0023=lowerAtom09Coeff4_identity_kernel_program.ops.drop 672 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 672 32 704
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0023 lowerAtom09Coeff4_identity_kernel_ops_suffix0024 lowerAtom09Coeff4_identity_kernel_ops_suffix0023
+    (Eq.refl 704) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0023)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0023 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0024)) lowerAtom09Coeff4_identity_kernel_ops_suffix0024_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0022_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0022=lowerAtom09Coeff4_identity_kernel_program.ops.drop 640 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 640 32 672
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0022 lowerAtom09Coeff4_identity_kernel_ops_suffix0023 lowerAtom09Coeff4_identity_kernel_ops_suffix0022
+    (Eq.refl 672) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0022)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0022 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0023)) lowerAtom09Coeff4_identity_kernel_ops_suffix0023_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0021_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0021=lowerAtom09Coeff4_identity_kernel_program.ops.drop 608 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 608 32 640
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0021 lowerAtom09Coeff4_identity_kernel_ops_suffix0022 lowerAtom09Coeff4_identity_kernel_ops_suffix0021
+    (Eq.refl 640) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0021)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0021 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0022)) lowerAtom09Coeff4_identity_kernel_ops_suffix0022_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0020_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0020=lowerAtom09Coeff4_identity_kernel_program.ops.drop 576 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 576 32 608
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0020 lowerAtom09Coeff4_identity_kernel_ops_suffix0021 lowerAtom09Coeff4_identity_kernel_ops_suffix0020
+    (Eq.refl 608) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0020)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0020 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0021)) lowerAtom09Coeff4_identity_kernel_ops_suffix0021_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0019_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0019=lowerAtom09Coeff4_identity_kernel_program.ops.drop 544 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 544 32 576
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0019 lowerAtom09Coeff4_identity_kernel_ops_suffix0020 lowerAtom09Coeff4_identity_kernel_ops_suffix0019
+    (Eq.refl 576) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0019)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0019 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0020)) lowerAtom09Coeff4_identity_kernel_ops_suffix0020_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0018_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0018=lowerAtom09Coeff4_identity_kernel_program.ops.drop 512 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 512 32 544
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0018 lowerAtom09Coeff4_identity_kernel_ops_suffix0019 lowerAtom09Coeff4_identity_kernel_ops_suffix0018
+    (Eq.refl 544) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0018)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0018 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0019)) lowerAtom09Coeff4_identity_kernel_ops_suffix0019_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0017_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0017=lowerAtom09Coeff4_identity_kernel_program.ops.drop 480 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 480 32 512
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0017 lowerAtom09Coeff4_identity_kernel_ops_suffix0018 lowerAtom09Coeff4_identity_kernel_ops_suffix0017
+    (Eq.refl 512) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0017)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0017 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0018)) lowerAtom09Coeff4_identity_kernel_ops_suffix0018_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0016_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0016=lowerAtom09Coeff4_identity_kernel_program.ops.drop 448 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 448 32 480
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0016 lowerAtom09Coeff4_identity_kernel_ops_suffix0017 lowerAtom09Coeff4_identity_kernel_ops_suffix0016
+    (Eq.refl 480) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0016)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0016 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0017)) lowerAtom09Coeff4_identity_kernel_ops_suffix0017_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0015_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0015=lowerAtom09Coeff4_identity_kernel_program.ops.drop 416 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 416 32 448
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0015 lowerAtom09Coeff4_identity_kernel_ops_suffix0016 lowerAtom09Coeff4_identity_kernel_ops_suffix0015
+    (Eq.refl 448) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0015)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0015 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0016)) lowerAtom09Coeff4_identity_kernel_ops_suffix0016_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0014_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0014=lowerAtom09Coeff4_identity_kernel_program.ops.drop 384 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 384 32 416
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0014 lowerAtom09Coeff4_identity_kernel_ops_suffix0015 lowerAtom09Coeff4_identity_kernel_ops_suffix0014
+    (Eq.refl 416) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0014)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0014 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0015)) lowerAtom09Coeff4_identity_kernel_ops_suffix0015_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0013_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0013=lowerAtom09Coeff4_identity_kernel_program.ops.drop 352 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 352 32 384
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0013 lowerAtom09Coeff4_identity_kernel_ops_suffix0014 lowerAtom09Coeff4_identity_kernel_ops_suffix0013
+    (Eq.refl 384) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0013)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0013 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0014)) lowerAtom09Coeff4_identity_kernel_ops_suffix0014_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0012_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0012=lowerAtom09Coeff4_identity_kernel_program.ops.drop 320 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 320 32 352
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0012 lowerAtom09Coeff4_identity_kernel_ops_suffix0013 lowerAtom09Coeff4_identity_kernel_ops_suffix0012
+    (Eq.refl 352) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0012)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0012 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0013)) lowerAtom09Coeff4_identity_kernel_ops_suffix0013_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0011_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0011=lowerAtom09Coeff4_identity_kernel_program.ops.drop 288 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 288 32 320
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0011 lowerAtom09Coeff4_identity_kernel_ops_suffix0012 lowerAtom09Coeff4_identity_kernel_ops_suffix0011
+    (Eq.refl 320) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0011)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0011 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0012)) lowerAtom09Coeff4_identity_kernel_ops_suffix0012_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0010_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0010=lowerAtom09Coeff4_identity_kernel_program.ops.drop 256 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 256 32 288
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0010 lowerAtom09Coeff4_identity_kernel_ops_suffix0011 lowerAtom09Coeff4_identity_kernel_ops_suffix0010
+    (Eq.refl 288) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0010)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0010 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0011)) lowerAtom09Coeff4_identity_kernel_ops_suffix0011_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0009_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0009=lowerAtom09Coeff4_identity_kernel_program.ops.drop 224 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 224 32 256
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0009 lowerAtom09Coeff4_identity_kernel_ops_suffix0010 lowerAtom09Coeff4_identity_kernel_ops_suffix0009
+    (Eq.refl 256) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0009)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0009 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0010)) lowerAtom09Coeff4_identity_kernel_ops_suffix0010_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0008_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0008=lowerAtom09Coeff4_identity_kernel_program.ops.drop 192 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 192 32 224
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0008 lowerAtom09Coeff4_identity_kernel_ops_suffix0009 lowerAtom09Coeff4_identity_kernel_ops_suffix0008
+    (Eq.refl 224) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0008)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0008 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0009)) lowerAtom09Coeff4_identity_kernel_ops_suffix0009_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0007_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0007=lowerAtom09Coeff4_identity_kernel_program.ops.drop 160 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 160 32 192
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0007 lowerAtom09Coeff4_identity_kernel_ops_suffix0008 lowerAtom09Coeff4_identity_kernel_ops_suffix0007
+    (Eq.refl 192) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0007)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0007 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0008)) lowerAtom09Coeff4_identity_kernel_ops_suffix0008_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0006_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0006=lowerAtom09Coeff4_identity_kernel_program.ops.drop 128 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 128 32 160
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0006 lowerAtom09Coeff4_identity_kernel_ops_suffix0007 lowerAtom09Coeff4_identity_kernel_ops_suffix0006
+    (Eq.refl 160) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0006)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0006 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0007)) lowerAtom09Coeff4_identity_kernel_ops_suffix0007_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0005_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0005=lowerAtom09Coeff4_identity_kernel_program.ops.drop 96 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 96 32 128
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0005 lowerAtom09Coeff4_identity_kernel_ops_suffix0006 lowerAtom09Coeff4_identity_kernel_ops_suffix0005
+    (Eq.refl 128) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0005)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0005 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0006)) lowerAtom09Coeff4_identity_kernel_ops_suffix0006_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0004_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0004=lowerAtom09Coeff4_identity_kernel_program.ops.drop 92 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 92 4 96
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0004 lowerAtom09Coeff4_identity_kernel_ops_suffix0005 lowerAtom09Coeff4_identity_kernel_ops_suffix0004
+    (Eq.refl 96) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0004)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0004 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0005)) lowerAtom09Coeff4_identity_kernel_ops_suffix0005_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0003_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0003=lowerAtom09Coeff4_identity_kernel_program.ops.drop 91 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 91 1 92
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0003 lowerAtom09Coeff4_identity_kernel_ops_suffix0004 lowerAtom09Coeff4_identity_kernel_ops_suffix0003
+    (Eq.refl 92) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0003)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0003 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0004)) lowerAtom09Coeff4_identity_kernel_ops_suffix0004_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0002_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0002=lowerAtom09Coeff4_identity_kernel_program.ops.drop 64 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 64 27 91
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0002 lowerAtom09Coeff4_identity_kernel_ops_suffix0003 lowerAtom09Coeff4_identity_kernel_ops_suffix0002
+    (Eq.refl 91) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0002)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0002 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0003)) lowerAtom09Coeff4_identity_kernel_ops_suffix0003_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0001_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0001=lowerAtom09Coeff4_identity_kernel_program.ops.drop 32 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 32 32 64
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0001 lowerAtom09Coeff4_identity_kernel_ops_suffix0002 lowerAtom09Coeff4_identity_kernel_ops_suffix0001
+    (Eq.refl 64) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0001)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0001 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0002)) lowerAtom09Coeff4_identity_kernel_ops_suffix0002_coverage
+
+private theorem lowerAtom09Coeff4_identity_kernel_ops_suffix0000_coverage :
+    lowerAtom09Coeff4_identity_kernel_ops_suffix0000=lowerAtom09Coeff4_identity_kernel_program.ops.drop 0 :=
+  CertificateKernel.SparseProgramArrayCoverage.suffix_eq_drop_of_parts
+    lowerAtom09Coeff4_identity_kernel_program.ops 0 32 32
+    lowerAtom09Coeff4_identity_kernel_ops_chunk0000 lowerAtom09Coeff4_identity_kernel_ops_suffix0001 lowerAtom09Coeff4_identity_kernel_ops_suffix0000
+    (Eq.refl 32) (Eq.refl lowerAtom09Coeff4_identity_kernel_ops_chunk0000)
+    (Eq.refl (lowerAtom09Coeff4_identity_kernel_ops_chunk0000 ++ lowerAtom09Coeff4_identity_kernel_ops_suffix0001)) lowerAtom09Coeff4_identity_kernel_ops_suffix0001_coverage
+
+theorem lowerAtom09Coeff4_identity_kernel_ops_coverage : lowerAtom09Coeff4_identity_kernel_program.ops=lowerAtom09Coeff4_identity_kernel_ops_suffix0000 :=
+  CertificateKernel.SparseProgramArrayCoverage.ops_eq_suffix_of_drop_zero
+    lowerAtom09Coeff4_identity_kernel_program.ops lowerAtom09Coeff4_identity_kernel_ops_suffix0000 lowerAtom09Coeff4_identity_kernel_ops_suffix0000_coverage
+
+end LeanVerification.PositiveDCompletion
