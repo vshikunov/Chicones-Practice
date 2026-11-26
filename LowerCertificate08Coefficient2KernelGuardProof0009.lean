@@ -1,0 +1,65 @@
+import LeanVerification.PositiveDCompletion.LowerCertificate08Coefficient2KernelGuardData
+import LeanVerification.PositiveDCompletion.LowerCertificate08Coefficient2KernelData
+import LeanVerification.CertificateKernel.SparseProgramArrayAliases
+import LeanVerification.CertificateKernel.SparseProductAccumulatorFast
+import LeanVerification.CertificateKernel.SparseProductAccumulator
+import LeanVerification.CertificateKernel.SparseProgramArrayProductStep
+import LeanVerification.CertificateKernel.SparseProgramArrayChunks
+import LeanVerification.CertificateKernel.SourceValue
+import LeanVerification.CertificateKernel.SparseProgramArrayLiteral
+
+noncomputable section
+namespace LeanVerification.PositiveDCompletion
+set_option Elab.async false
+set_option maxHeartbeats 96000000
+set_option maxRecDepth 100000
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0087_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2656 lowerAtom08Coeff2_identity_kernel_ops_chunk0087=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0088_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2688 lowerAtom08Coeff2_identity_kernel_ops_chunk0088=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0089_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2720 lowerAtom08Coeff2_identity_kernel_ops_chunk0089=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0090_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2752 lowerAtom08Coeff2_identity_kernel_ops_chunk0090=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0091_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2784 lowerAtom08Coeff2_identity_kernel_ops_chunk0091=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0092_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2816 lowerAtom08Coeff2_identity_kernel_ops_chunk0092=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0093_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2848 lowerAtom08Coeff2_identity_kernel_ops_chunk0093=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0094_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2880 lowerAtom08Coeff2_identity_kernel_ops_chunk0094=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0095_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2912 lowerAtom08Coeff2_identity_kernel_ops_chunk0095=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0096_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2944 lowerAtom08Coeff2_identity_kernel_ops_chunk0096=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0097_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 2976 lowerAtom08Coeff2_identity_kernel_ops_chunk0097=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0098_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 3008 lowerAtom08Coeff2_identity_kernel_ops_chunk0098=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0099_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 3040 lowerAtom08Coeff2_identity_kernel_ops_chunk0099=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0100_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 3072 lowerAtom08Coeff2_identity_kernel_ops_chunk0100=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0101_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 3104 lowerAtom08Coeff2_identity_kernel_ops_chunk0101=true := by decide +kernel
+
+theorem lowerAtom08Coeff2_identity_kernel_ops_chunk0102_checked :
+    CertificateKernel.SparseProgramArray.checkFrom lowerAtom08Coeff2_identity_kernel_program.caches 3136 lowerAtom08Coeff2_identity_kernel_ops_chunk0102=true := by decide +kernel
+
+end LeanVerification.PositiveDCompletion

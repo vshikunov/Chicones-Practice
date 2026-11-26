@@ -1,0 +1,15 @@
+import LeanVerification.PositiveDCompletion.LowerCertificate08Coefficient2KernelData
+
+noncomputable section
+namespace LeanVerification.PositiveDCompletion
+set_option Elab.async false
+set_option maxHeartbeats 96000000
+set_option maxRecDepth 100000
+
+theorem lowerAtom08Coeff2_identity_kernel_erase_left : CertificateKernel.SparseProgramArray.outputExpr lowerAtom08Coeff2_identity_kernel_program 4877=CertificateKernel.SparseProgram.lowerPowers lowerAtom08Coeff2_identity_kernel_plain_left :=
+  Eq.refl (CertificateKernel.SparseProgram.lowerPowers lowerAtom08Coeff2_identity_kernel_plain_left)
+
+theorem lowerAtom08Coeff2_identity_kernel_erase_right : CertificateKernel.SparseProgramArray.outputExpr lowerAtom08Coeff2_identity_kernel_program 0=CertificateKernel.SparseProgram.lowerPowers lowerAtom08Coeff2_identity_kernel_plain_right :=
+  Eq.refl (CertificateKernel.SparseProgram.lowerPowers lowerAtom08Coeff2_identity_kernel_plain_right)
+
+end LeanVerification.PositiveDCompletion
