@@ -1,0 +1,387 @@
+% Proof note for the positive-D regional completion.
+% Reviewed mathematical rewrite; regional execution completed.
+% All 55 original lower coefficient identities, 10 certificate aggregates,
+% and 10 positivity consumers passed. CompleteRow2, CheckpointSeventeen,
+% and the LeanVerification root compiled successfully on 25 November 2026.
+% The final combined build, transitive axiom audit, and release review
+% are recorded separately in verification_status.json.
+
+\subsection{Positive $D$: a signed real secant proof}
+\label{lean17:positive-d-proof}
+
+The full regional statement is
+\[
+ \frac14\le F<1,\quad D>0
+ \quad\Longrightarrow\quad
+ \operatorname{CriticalPeriodBound}(1,D,F).
+\]
+The formal bound counts distinct isolated critical energies of the least
+period of the original Loud vector field, on its full period annulus and
+in the original time variable. The interior argument uses the actual two
+real turning points. Its domain is
+\[
+ D>0,\qquad \frac14<F<1,\qquad F\ne\frac12,\qquad
+ h\in\operatorname{AdmissibleEnergy}(D,F).
+\]
+The quarter edge has the established bound zero. The half line is treated
+by continuity of physical width derivatives after the interior comparison.
+
+\paragraph{Normalization and the signed branch.}
+Put $a=F^{-1}-1$ and $d=-(D+1)/D$. Then $0<a<3$, $a\ne1$, and
+$d<-1$. The mechanical potential is an affine energy rescaling of
+\[
+ V(u)=\frac d2u^2+\frac{1-d}{1-a}u^{1-a}
+       +\frac1{2a}u^{-2a}.
+\]
+Write the actual equal-energy turns as
+$u_+=\nu e^q$, $u_-=\nu e^{-q}$, with $\nu,q>0$, and set
+\[
+ f=\frac{\tanh(aq)}{\tanh q},\qquad
+ \rho=\left(\frac{\sinh(aq)}{a\sinh q}\right)^2,\qquad
+ r=\nu^{1+a}\frac{\sinh q}{\sinh(aq)},\qquad
+ \omega=ad r^2-1.
+\]
+Thus $\omega<-1$. The equal-energy equation gives
+\[
+ f(1+\omega)+\frac{a(1-d)}{1-a}(1-f)r-1=0.
+\]
+The force signs at the two actual turns prove
+$1+f(1+\omega)<0$. The relevant identity is
+\[
+ a\nu^{2a}\{u_+V'(u_+)-u_-V'(u_-)\}
+ =(1+a)\{ad\nu^{2(1+a)}\sinh(2q)+\sinh(2aq)\},
+\]
+whose right-hand bracket has the sign of $1+f(1+\omega)$.
+The files \texttt{SignedQuadratic}, \texttt{PhysicalSheet}, and
+\texttt{SignedTransport} establish this branch and its derivatives.
+
+\paragraph{Regularity and signed denominators.}
+Write
+\[
+ g=1-a^2\rho,\qquad A=f^2-a^2\rho,\qquad
+ C=a\rho(1-af),\qquad M_0=g(1+f),\qquad N=M_0+C\omega.
+\]
+Here $M_0$ is distinct from the auxiliary polynomial
+$\texttt{sourceM}=(1+a)(f-a\rho)$. The secant geometry supplies the
+seven exclusions recorded in \texttt{SignedRegular}:
+\[
+ a\ne0,\quad 1+f\ne0,\quad g\ne0,\quad f-a\ne0,\quad
+ 1-f\ne0,\quad 1-\rho\ne0,\quad A\ne0.
+\]
+The actual turning-point transport gives $Ng<0$; the secant geometry
+gives $Ag>0$ and $Cg>0$. In particular $C,N\ne0$, $AN<0$, and
+\[
+ n=-\frac NC>0,\qquad
+ \Delta_P=4(1+\omega)AN^3>0,\qquad
+ \Delta_R=4a(1+f)(1+\omega)AN^5>0.
+\]
+Indeed $(1+\omega)AN>0$, and the remaining powers of $N$ are even.
+The coefficient $C$ has opposite signs on the two secant cones; these
+denominator statements hold on both. The named sign lemma is
+\texttt{signed\_numerator\_domain}, applied to the actual turns by
+\texttt{actual\_signed\_numerator\_domain}.
+
+\paragraph{Energy and width jets.}
+Throughout this paragraph $D,F$ are fixed, and primes denote derivatives
+with respect to the original physical energy $h$. The normalized energy
+is affine:
+\[
+ \widetilde E(h)=\frac{h-h_0}{c},\qquad
+ h_0=\operatorname{zeroEndpointHeight}(D,F),\qquad
+ c=\frac{D+1}{F}>0.
+\]
+Here $c$ is exactly the product of the physical energy scale and $d$.
+Hence $\widetilde E'=1/c$ is constant and $\widetilde E''=0$.
+Let $W=u_+-u_-=F W_{\rm phys}$ and $\lambda=W'/W>0$.
+The exact physical energy-width identity is
+\[
+ \widetilde E=W^2U,\qquad
+ U=\frac{(1+f)^2\{(1+\omega)^{-1}-a^2\rho\}}{8A},
+ \qquad \widetilde E'>0.
+\]
+The rational transport produces $k,\Phi$ with
+\[
+ U'=\lambda(k-2U),\qquad k'=-\lambda\Phi,\qquad
+ \widetilde E'=WW'k.
+\]
+Consequently $k>0$. Differentiating the last identity and using
+$\widetilde E''=0$ and $k'=-(W'/W)\Phi$ gives
+\[
+ 0=\{(W')^2+WW''\}k+WW'k'
+  =\{(W')^2+WW''\}k-(W')^2\Phi.
+\]
+On $\Phi>0$, the checked diagonal jets and the signed regularity
+conditions give
+\[
+ \Phi'=\lambda(R_X-\Phi),\qquad
+ R_X=\operatorname{modelF}\,\operatorname{modelR}.
+\]
+The finite estimate needed for the physical argument is therefore
+$\Phi>0\Longrightarrow R_X>0$.
+The affine normalization and transport identities are in
+\texttt{SignedNormalization}, \texttt{PhysicalEnergyRatio},
+\texttt{SignedEnergy}, \texttt{PhysicalModel}, and
+\texttt{ActualCurvatureJet}.
+
+\paragraph{The two strict secant cones.}
+For $0<a<1$ one has
+\[
+ a<f<1,\qquad 0<\rho<1,\qquad f\rho<a.
+\]
+For $1<a<3$ one has
+\[
+ 1<f<a,\qquad \frac af<\rho<\mathcal R(a,f),
+\]
+where
+\[
+ \begin{split}
+ B_{\rm env}(a,f)={}&-a^3f+2a^2f^2+3a^2f+2a^2
+                    -4af^2-3af-4a+5f,\\
+ \mathcal R(a,f)={}&
+ \frac{f^2(a-1)^3(af^2+a-2f)}{a^2(f-1)^2B_{\rm env}(a,f)}.
+ \end{split}
+\]
+The denominator $B_{\rm env}$ is positive on the lower strip.
+The lower correlation follows from
+\[
+ H=(a-1)^3f^3(f+a^2\rho)
+   -a^2\rho(f-1)^2\{a^2\rho(f^2+1)-2f^2\}>0
+\]
+and the denominator-free tangent identity
+\[
+ \begin{split}
+ f^2\{f^2(a-1)^3(af^2+a-2f)-a^2(f-1)^2B_{\rm env}\rho\}
+  ={}&(f-1)^2H\\
+    &+(f^2+1)\{a^2(f-1)^2\rho-(a-1)^2f^2\}^2.
+ \end{split}
+\]
+Both correlations use strict monotonicity of
+$\sinh^3q/(q^3\cosh q)$. The lower comparison uses
+$(a-1)q<2q$, which retains the restriction $a<3$.
+These estimates are in \texttt{HyperbolicBounds}, \texttt{LowerCone},
+and \texttt{SecantGeometry}.
+
+\paragraph{Positive forms of the lower coordinate denominators.}
+Put
+\[
+ f_c=1+(a-1)t,\qquad
+ C_c=2+2(a-1)t+a(a-1)t^2,\qquad
+ D_c=a^2t^2B_c(a,t),\qquad \mathcal D=f_cD_c.
+\]
+The low-degree coordinate polynomials have the exact positive forms
+\[
+ \begin{split}
+ B_c(a,t)={}&(5-a)(1-t)^2+(5-a)(a+1)t(1-t)\\
+            &+a(a+1)t^2,
+ \end{split}
+\]
+and
+\[
+ \begin{split}
+ G_c(a,t)={}&a(a-1)^4t^3+
+       \{a(a-1)((a-2)^2+5)+2\}t^2\\
+            &+(8a-4)t+2.
+ \end{split}
+\]
+They give $B_c>0$ for $0<a<5$, $0<t<1$, and $G_c\ge2$ for
+$a\ge1$, $t\ge0$. In the required lower cone $1<a<3$ and
+$0<t<1$, all of $f_c,D_c,\mathcal D$ are strictly positive.
+The wider algebraic ranges of these two lemmas leave the hyperbolic
+domain $a<3$ unchanged.
+
+The coordinate identities are
+\[
+ B_{\rm env}(a,f_c)=(a-1)^2B_c(a,t),\qquad
+ f_c^3C_c-aD_c=(1-t)^2G_c(a,t).
+\]
+They expose the gap in the correlated interval:
+\[
+ \mathcal R(a,f_c)-\frac a{f_c}
+ =\frac{(1-t)^2G_c(a,t)}{\mathcal D}>0.
+\]
+With $a=1+2x$, the lower chart consequently takes the form
+\[
+ \rho=\frac{aD_c+(1-t)^2G_c(a,t)\eta}{f_cD_c},
+ \qquad (x,t,\eta)\in(0,1)^3.
+\]
+The exact identities and their sign proofs are recorded in
+\texttt{LowerCoordinates} and \texttt{LowerCoordinateStructure}.
+
+\paragraph{Rational normalization and homogeneous pole coordinates.}
+The source normalization first cancels independent denominator factors;
+the source coefficient identities are separate integer polynomial
+equalities. Throughout the regular sheet the first fraction below holds.
+For the implication under consideration, assume $\Phi>0$.
+This derives the required $\texttt{modelPsi}\ne0$ and hence the second:
+\[
+ \Phi=\frac{P_\omega(\omega)}{\Delta_P},\qquad
+ R_X=\frac{R_\omega(\omega)}{\Delta_R},\qquad
+ \deg P_\omega\le4,\quad \deg R_\omega\le6.
+\]
+For a coefficient expansion
+$Q_\omega(s)=\sum_{i=0}^m Q_i s^i$, with $m=4$ or $m=6$, define
+\[
+ \widehat Q_j=\sum_{i=j}^m
+       \binom ij(-1)^iM_0^{\,i-j}C^{m-i}Q_i.
+\]
+The homogeneous change of variables is the polynomial identity
+\[
+ C^mQ_\omega(\omega)=\sum_{j=0}^m\widehat Q_j(-N)^j.
+\]
+Set $p_j=C^j\widehat P_j$, $r_j=C^j\widehat R_j$, and define
+\[
+ P_n(s)=\sum_{j=0}^4p_js^j,\qquad
+ R_n(s)=\sum_{j=0}^6r_js^j.
+\]
+Since $C\ne0$ and $n=-N/C$,
+\[
+ P_n(n)=C^4P_\omega(\omega),\qquad
+ R_n(n)=C^6R_\omega(\omega).
+\]
+Both $C^4$ and $C^6$ are strictly positive. Thus this change preserves
+the signs needed in the comparison on both secant cones. The formal
+identities are \texttt{inverse\_homogeneous\_4},
+\texttt{inverse\_homogeneous\_6}, \texttt{phiPoleValue\_actual}, and
+\texttt{rxPoleValue\_actual}.
+
+\paragraph{One quartic--sextic comparison and ten scalar leaves.}
+For $n>0$, the coefficient conditions used by the abstract comparison are
+\[
+ p_4<0,\quad r_0\ge0,\quad r_1>0,\quad r_2,r_3,r_4,r_5\ge0,
+ \qquad
+ s_j=-p_4r_{j+2}+r_6p_j\ge0\quad(0\le j\le3).
+\]
+When $r_6\ge0$, these signs give $R_n(n)>0$ directly.
+When $r_6<0$, use
+\[
+ -p_4R_n(n)=-p_4r_0-p_4r_1n+
+             \sum_{j=0}^3s_jn^{j+2}-r_6n^2P_n(n).
+\]
+If $P_n(n)>0$, the right side is positive; in particular
+$-p_4r_1n>0$. This is
+\texttt{sextic\_pos\_of\_quartic\_pos}. Combining it with the positive
+denominators and the positive powers of $C$ gives the required
+$\Phi>0\Longrightarrow R_X>0$.
+
+The ten finite leaves have a fixed role: leaf 00 controls $-p_4$;
+leaves 01--05 control $r_1,\ldots,r_5$; and leaves 06--09 control
+$s_0,\ldots,s_3$. The remaining constant coefficient factors as
+\[
+ r_0=
+ 3a^2\rho^3(1+a)^6(1+f)^5g^3(f-a\rho)^4K_0^2(1-f),
+\]
+where $K_0=\texttt{poleCore00}(a,f,\rho)$. Its nonnegativity follows
+from $g(1-f)>0$ and the even powers, including the square $K_0^2$.
+The structure \texttt{LeafSigns} uses sign $+1$ on $a<1$ and $-1$
+on $a>1$; only leaves 01 and 05 carry this sign. The conversion lemmas
+\texttt{upper\_pole\_coefficient\_signs} and
+\texttt{lower\_pole\_coefficient\_signs} supply exactly the
+\texttt{PoleCoefficientSigns} needed by the abstract comparison.
+
+\paragraph{Finite positivity on the two cubes.}
+The upper chart is $f=a+(1-a)t$. Its first eight leaves use
+$\rho=\eta$ on $(a,t,\eta)\in(0,1)^3$.
+Leaves 08 and 09 use $\rho=a\eta/f$; the physical correlation
+$f\rho<a$ is exactly what places $\eta$ in $(0,1)$.
+The upper certificates list $8584$ positive integer Bernstein
+coefficients.
+
+The lower chart keeps the full envelope correlation through the
+positive denominator $\mathcal D$. Write $W_c=(1-t)^2G_c(a,t)$.
+For $L(\rho)=\sum_{i=0}^m c_i\rho^i$ the exact homogeneous formula is
+\[
+ \begin{split}
+ &(f_cD_c)^m
+ L\left(\frac{aD_c+W_c\eta}{f_cD_c}\right)\\
+ &\quad=
+ \sum_{j=0}^mD_c^{m-j}W_c^j
+       \left(\sum_{i=j}^m\binom ij c_i a^{i-j}f_c^{m-i}\right)\eta^j.
+ \end{split}
+\]
+The formal homogeneous lemmas cover degrees $2,3,4,6$.
+The inner sums remain named bivariate coordinate cores.
+Boundary monomial factors are extracted explicitly and are positive
+on the open cube. Each remaining atom is identified exactly with a
+finite sum of unnormalized Bernstein terms
+\[
+ c_{ijk}x^i(1-x)^{d_x-i}
+         t^j(1-t)^{d_t-j}
+         \eta^k(1-\eta)^{d_\eta-k}.
+\]
+Every listed coefficient is a positive integer, all indices satisfy
+their degree bounds, and the list is nonempty. Omitted coefficients
+are zero. The lower certificates list $59167$ positive coefficients.
+These statements concern the Bernstein representation; positivity
+of the coefficients in an expanded monomial basis is not required.
+
+All coordinate denominators are proved positive before their powers
+are cleared. The finite obligations are exact polynomial identities
+and finite positivity proofs. Separate generated modules retain the
+checked pieces and assemble the same source identities; none of
+their validity or source-correspondence obligations is added as an
+assumption of the regional theorem.
+
+\paragraph{The checked source-identity interface.}
+For each large coefficient identity, Lean checks four propositions:
+validity of all certificate operations, equality of the two selected
+output caches, and two source-erasure equalities identifying the two
+output expressions with \texttt{lowerPowers} of the unchanged source expressions.
+The theorem \texttt{CertificateKernel.sourceIdentity\_of\_checked} combines
+these four proved statements with the evaluation semantics to give equality
+of the two \texttt{SourceValue} evaluations. The original real-formula
+wrapper then gives its unchanged real identity. Independent \texttt{Guards}
+and \texttt{Erase} modules use shared transparent data; a short
+\texttt{Kernel} module composes their conclusions.
+
+\paragraph{Return to the actual period and the seams.}
+The width identities and finite comparison imply
+\[
+ (W')^2+WW''>0\Longrightarrow W'W'''-3(W'')^2>0.
+\]
+The positive scaling $W=F W_{\rm phys}$ transports this implication
+to the physical width. Set
+\[
+ Q=-W_{\rm phys}/4+hW_{\rm phys}'+h^2W_{\rm phys}'',\qquad
+ \chi=(W_{\rm phys}')^2+W_{\rm phys}W_{\rm phys}''.
+\]
+The physical width criterion proves $Q>0\Longrightarrow\chi>0$.
+It then uses the exact identity
+\[
+ 4W_{\rm phys}'\,hQ'
+ =3h\{W_{\rm phys}'+2hW_{\rm phys}''\}^2
+  +4h^3\{W_{\rm phys}'W_{\rm phys}'''-3(W_{\rm phys}'')^2\}.
+\]
+Thus $hQ'+Q/2>0$ wherever $Q>0$.
+For every fixed admissible cap $H$, the physical Abel input has a
+continuous extension on $[0,H]$ given by
+\[
+ z(0)=0,\qquad z(h)=\sqrt h\,Q(h)\quad(0<h\le H).
+\]
+With the original time normalization,
+\[
+ (Az)(h)=2\int_0^{\pi/2}z(h\sin^2\theta)\,d\theta,\qquad
+ \sqrt2\,(Az)(h)=h^2T'(h).
+\]
+The checked Abel-period transfer gives the bound one for the original
+least period $T$. It also covers the alternative in which the Abel
+input vanishes throughout the annulus: then $T'$ vanishes throughout,
+and there are no isolated critical energies.
+
+At $F=1/2$, fix an admissible physical energy with $\chi>0$.
+Joint analyticity and openness of admissibility preserve these
+conditions for nearby $F>1/2$. Continuity transfers the nonnegative
+physical Schwarz expression to the seam. The strict Euler conclusion
+still follows from $Q>0$ and the displayed width identity.
+The $F=1/4$ edge uses the already established bound zero.
+These two endpoint arguments close the full parameter region.
+
+The final export is
+\texttt{PositiveDCompletion.full\_regional\_row2} in
+\texttt{CompleteRow2.lean}; its only mathematical premise is
+\texttt{parameterRegion 2 D F}. The global assembly combines this
+regional conclusion with the other table bounds and the analytic
+sharpness construction. The latter supplies ordered simple critical
+energy paths, with negative second period derivative at the first
+and positive second derivative at the second. The final build and transitive
+axiom audit of these exact exports are recorded in
+\texttt{verification\_status.json}.
