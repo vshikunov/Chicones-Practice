@@ -1,0 +1,11 @@
+import LeanVerification.PositiveDCompletion.LowerPolynomial01Map0
+import LeanVerification.PositiveDCompletion.LowerPolynomial01Map1
+import LeanVerification.PositiveDCompletion.LowerPolynomial01Map2
+import LeanVerification.PositiveDCompletion.LowerPolynomial01Map3
+
+noncomputable section
+namespace LeanVerification.PositiveDCompletion
+set_option maxHeartbeats 96000000
+set_option maxRecDepth 100000
+
+end LeanVerification.PositiveDCompletion
